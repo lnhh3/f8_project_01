@@ -1,0 +1,16 @@
+{
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "prettier.tabWidth": 4,
+    "prettier.trailingComma": "es5",
+    "prettier.semi": false,
+    "prettier.singleQuote": true,
+    "prettier.bracketSameLine": true,
+    "prettier.endOfLine": "crlf",
+    "editor.formatOnSave": true,
+    "editor.formatOnPaste": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.insertSpaces": true,
+    "editor.wordWrap": "on",
+    "editor.renderWhitespace": "all"
+}
