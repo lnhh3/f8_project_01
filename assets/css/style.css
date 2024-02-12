@@ -3,7 +3,9 @@
 }
 
 :root {
-    --primary-font-size: 1.4rem;
+    --14-font-size: 1.4rem;
+    --16-font-size: 1.6rem;
+    --18-font-size: 1.8rem;
     --primary-color: #0F1B4C;
 }
 
@@ -12,7 +14,7 @@ html {
 }
 
 body {
-    font-size: 1.6rem;
+    font-size: var(--16-font-size);
     font-family: "Poppins", sans-serif;
 }
 
@@ -35,7 +37,7 @@ a {
     background: var(--primary-color);
     border-radius: 8px;
     font-weight: 500;
-    font-size: var(--primary-font-size);
+    font-size: var(--14-font-size);
     text-align: center;
     color: #FFF;
 }
@@ -46,6 +48,7 @@ a {
 
 /* Header */
 .header {
+    position: relative;
     background: #E6F0FF;
     height: 100vh;
 }
@@ -62,7 +65,7 @@ a {
 }
 
 .navbar ul a {
-    font-size: var(--primary-font-size);
+    font-size: var(--14-font-size);
     font-weight: 500;
     color: #4F5361;
     padding: 8px 14px;
@@ -78,7 +81,7 @@ a {
 
 .navbar .action-link {
     font-weight: 500;
-    font-size: var(--primary-font-size);
+    font-size: var(--14-font-size);
     color: var(--primary-color);
 }
 
@@ -97,7 +100,7 @@ a {
 
 .hero .sub-title {
     font-weight: 500;
-    font-size: 1.8rem;
+    font-size: var(--18-font-size);
     line-height: 1.5;
     letter-spacing: 0.01em;
     color: #687691;
@@ -114,7 +117,7 @@ a {
 .hero .desc {
     margin-top: 30px;
     font-weight: 400;
-    font-size: 1.8rem;
+    font-size: var(--18-font-size);
     line-height: 1.78;
     color: #5A6473;
 }
@@ -124,6 +127,41 @@ a {
     margin-top: 40px;
 }
 
-/* Content */
+.hero-img {
+    position: absolute;
+    right: calc((100vw - 1110px) / 2 - 100px);
+    bottom: 0;
+}
 
-/* Footer */
+/* Clients */
+.clients {
+    margin-top: 122px;
+
+}
+
+.clients .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.clients .stars {
+    margin-left: auto;
+}
+
+.clients .desc {
+    font-weight: 500;
+    font-size: var(--16-font-size);
+    line-height: 1.25;
+    color: #7d8589;
+}
+
+.clients .row-desc {
+    margin-top: 23px;
+}
+
+.clients .img {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 96px;
+}
