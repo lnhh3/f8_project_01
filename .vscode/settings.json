@@ -2,9 +2,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "prettier.tabWidth": 4,
     "prettier.trailingComma": "es5",
-    "prettier.semi": false,
     "prettier.singleQuote": true,
-    "prettier.bracketSameLine": true,
     "prettier.endOfLine": "crlf",
     "editor.formatOnSave": true,
     "editor.formatOnPaste": true,
@@ -15,5 +13,6 @@
     "editor.renderWhitespace": "all",
     "[html]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
-    }
+    },
+    "prettier.bracketSameLine": true
 }
