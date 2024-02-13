@@ -3,9 +3,13 @@
 }
 
 :root {
+    --188percent-line-height: 1.88;
     --14-font-size: 1.4rem;
     --16-font-size: 1.6rem;
     --18-font-size: 1.8rem;
+    --400-font-weight: 400;
+    --500-font-weight: 500;
+    --600-font-weight: 600;
     --primary-color: #0F1B4C;
     --desc-color: #5A6473;
 }
@@ -17,6 +21,10 @@ html {
 body {
     font-size: var(--16-font-size);
     font-family: "Poppins", sans-serif;
+}
+
+main {
+    height: 10000px;
 }
 
 /* Common */
@@ -37,7 +45,7 @@ a {
     min-width: 98px;
     background: var(--primary-color);
     border-radius: 12px;
-    font-weight: 500;
+    font-weight: var(--500-font-weight);
     font-size: var(--14-font-size);
     text-align: center;
     color: #FFF;
@@ -45,6 +53,13 @@ a {
 
 .btn:hover {
     opacity: 0.7;
+}
+
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 2);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* Header */
@@ -67,7 +82,7 @@ a {
 
 .navbar ul a {
     font-size: var(--14-font-size);
-    font-weight: 500;
+    font-weight: var(--500-font-weight);
     color: #4F5361;
     padding: 8px 14px;
 }
@@ -81,7 +96,7 @@ a {
 }
 
 .navbar .action-link {
-    font-weight: 500;
+    font-weight: var(--500-font-weight);
     font-size: var(--14-font-size);
     color: var(--primary-color);
 }
@@ -101,7 +116,7 @@ a {
 }
 
 .hero .sub-title {
-    font-weight: 500;
+    font-weight: var(--500-font-weight);
     font-size: var(--18-font-size);
     line-height: 1.5;
     letter-spacing: 0.01em;
@@ -118,7 +133,7 @@ a {
 
 .hero .desc {
     margin-top: 30px;
-    font-weight: 400;
+    font-weight: var(--400-font-weight);
     font-size: var(--18-font-size);
     line-height: 1.78;
     color: var(--desc-color);
@@ -151,7 +166,7 @@ a {
 }
 
 .clients .desc {
-    font-weight: 500;
+    font-weight: var(--500-font-weight);
     font-size: var(--16-font-size);
     line-height: 1.25;
     color: #7d8589;
@@ -168,13 +183,14 @@ a {
     margin-top: 96px;
 }
 
+/* Guides */
 .guides {
     margin-top: 200px;
 }
 
 .guides .sub-title {
     position: relative;
-    font-weight: 600;
+    font-weight: var(--600-font-weight);
     font-size: 3.5rem;
     line-height: 1;
     text-align: center;
@@ -198,9 +214,9 @@ a {
     width: 459px;
     max-width: 100%;
     margin: 20px auto 0;
-    font-weight: 400;
+    font-weight: var(--400-font-weight);
     font-size: var(--16-font-size);
-    line-height: 1.88;
+    line-height: var(--188percent-line-height);
     text-align: center;
     color: var(--desc-color);
 }
@@ -218,7 +234,7 @@ a {
 
 .guide-item .title {
     margin-top: 26px;
-    font-weight: 500;
+    font-weight: var(--500-font-weight);
     font-size: 2rem;
     line-height: 1.1;
     color: #3b3c45;
@@ -227,7 +243,7 @@ a {
 .guide-item .link {
     display: inline-block;
     margin-top: 10px;
-    font-weight: 600;
+    font-weight: var(--600-font-weight);
     font-size: var(--14-font-size);
     color: #0689ff;
 }
@@ -244,4 +260,107 @@ a {
 
 .guide-cta .btn {
     min-width: 170px;
+}
+
+/* Featured */
+.featured {
+    --border-item: 12px;
+    margin-top: 120px;
+    padding: 110px 0;
+    background: #F5FAFE;
+}
+
+.featured .sub-title {
+    font-weight: var(--600-font-weight);
+    font-size: 3.5rem;
+    line-height: 1;
+    color: #000339;
+}
+
+.featured .row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.featured .desc {
+    font-weight: var(--400-font-weight);
+    font-size: var(--16-font-size);
+    line-height: var(--188percent-line-height);
+    color: #5a6473;
+}
+
+.featured .link {
+    display: flex;
+    align-items: center;
+    font-weight: var(--600-font-weight);
+    font-size: var(--18-font-size);
+    color: #0689ff;
+}
+
+.featured .link .arrow {
+    margin-left: 8px;
+}
+
+.featured .featured-list {
+    display: flex;
+    margin-top: 70px;
+    gap: 30px;
+}
+
+.featured .item {
+    flex: 1;
+    background: #fff;
+    border-radius: var(--border-item);
+}
+
+.featured .item .thumb {
+    width: 100%;
+    height: 227px;
+    object-fit: cover;
+    border-top-left-radius: var(--border-item);
+    border-top-right-radius: var(--border-item);
+}
+
+.featured .item .body {
+    padding: 17px 20px 24px;
+}
+
+.featured .item .title a {
+    font-weight: var(--600-font-weight);
+    font-size: 2rem;
+    line-height: 1.5;
+    color: #000339;
+}
+
+.featured .item .desc {
+    --line-clamp: 3;
+    margin-top: 11px;
+    font-weight: var(--500-font-weight);
+    font-size: var(--14-font-size);
+    line-height: 1.5;
+    color: #a3a6ab;
+    word-break: break-all;
+}
+
+.featured .item .info {
+    display: flex;
+    align-items: center;
+    margin-top: 21px;
+}
+
+.featured .item .icon {
+    margin-left: 23px;
+}
+
+.featured .item .icon:first-child {
+    margin-left: 0;
+}
+
+.featured .item .label {
+    margin-left: 8px;
+    font-weight: var(--500-font-weight);
+    font-size: var(--14-font-size);
+    letter-spacing: 0.01em;
+    color: #4d4d52;
 }
