@@ -12,7 +12,7 @@
     "editor.wordWrap": "on",
     "editor.renderWhitespace": "all",
     "[html]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
+        "editor.defaultFormatter": "vscode.html-language-features"
     },
     "prettier.bracketSameLine": true
 }
