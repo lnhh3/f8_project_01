@@ -115,6 +115,10 @@ a {
 }
 
 /* Hero */
+.hero {
+    margin-top: 130px;
+}
+
 .hero .info {
     width: 50.4%;
 }
